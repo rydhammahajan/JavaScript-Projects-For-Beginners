@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  
+    <link rel= "stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./logo.png">
+
+</head>
+
+<body>
+
+    <header class="px-3 py-3 border" >
+        <ul class="d-flex justify-content-center justify-content-sm-between">
+
+            <a href = "index.html">
+                <div class="d-flex gap-1">
+                    <li>
+                        <img src = "./logo.png" height = 50 ></li>
+        
+                    <li>
+                        <div class="h1">NoteKeeper</div>
+                    </li>
+                </div>
+            </a>
+            
+            
+            <div class="d-none d-sm-flex gap-5">
+                <li class="fs-4"  data-value = "home" ><a href="./index.html">Home</a></li>
+                <li class="fs-4" data-value = "archieve"><a href="./archieve.html">Archieve</a></li>
+            </div>
+            
+
+        </ul>
+    </header>
+
+    <div class="d-sm-none d-flex justify-content-between px-3 py-2 nav-buttons">
+        <button class = "col-4 p-2"><a href="index.html">Home</a></button>
+        <button class = "col-4 p-2"><a href="./archieve.html">Archieve</a></button>
+    </div>
+
+    <div class="d-flex flex-column align-items-center justify-content-center mt-5">
+
+        <div class="d-flex flex-column col-10 col-lg-5 input-wrapper p-3 position-relative">
+            <input type = "text" class="p-2 fs-1" placeholder="Title">
+            <textarea class="p-2 fs-5" placeholder="Add a note" ></textarea>
+            <img src = "plus.png" height="40" width="40" class = "add-button" data-value = "add-button">
+        </div>  
+    </div>
+
+    <div class = "pinned-notes px-3 py-3">
+        <p class="fs-3">Pinned Notes</p>
+
+        <div class="d-flex justify-content-center gap-3 pinned-notes-wrapper flex-wrap">
+        </div>
+    </div>
+
+    <div class="other-notes px-3 py-3">
+
+        <p class="fs-3">Other Notes</p>
+        <div class="d-flex justify-content-center gap-3 other-notes-wrapper flex-wrap">
+        </div>
+        
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+    <script src="https://kit.fontawesome.com/f2a02c59db.js" crossorigin="anonymous"></script>
+</body>
+</html>

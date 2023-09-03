@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./background.jpg");
+
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color :rgb(247, 244, 244) !important; 
+}
+
+header{
+    background-color : rgba(158, 145, 145 , 1);
+    border-bottom-left-radius : 20px ;
+    border-bottom-right-radius : 20px ;  
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+.nav-buttons button{
+    background-color : rgba(158, 145, 145 , 1);
+    color :rgb(247, 244, 244) ;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: none;
+    text-decoration: underline;
+}
+.nav-buttons button:active{
+    background-color : rgba(158, 145, 145 , 0.8);
+}
+input , textarea{
+    border: none;
+}
+
+input:focus , textarea:focus{
+    outline: none;
+}
+
+textarea{
+    overflow: hidden;
+    resize: none;
+}
+.input-wrapper{
+    border: 1px solid rgb(158, 145, 145 );
+}
+
+.add-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pinned-notes p , .other-notes p{
+    text-decoration: underline;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pinned-notes , .other-notes{
+    font-family: cursive;
+}
+
+.note{
+    background-color: white; 
+    border-radius: 20px ;
+}
+
+.icons-container{
+    display: none !important; 
+    color: rgb(158, 145, 145 );
+}
+
+.note:hover .icons-container{
+    display: flex !important;
+}
