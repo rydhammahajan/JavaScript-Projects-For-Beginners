@@ -1,6 +1,6 @@
 const pinned_notes_wrapper = document.querySelector(".pinned-notes-wrapper")  ;
 const other_notes_wrapper = document.querySelector(".other-notes-wrapper")  ;
-const archieve_notes_wrapper = document.querySelector(".archieve-notes-wrapper") 
+const archieve_notes_wrapper = document.querySelector(".archive-notes-wrapper") 
 const input = document.querySelector("input") ; 
 const textarea = document.querySelector("textarea") ; 
 let notes_database = {};
@@ -35,7 +35,7 @@ document.addEventListener("click" , (e)=>{
                     title : title , 
                     description : textarea.value , 
                     pinned : false , 
-                    archieve : false 
+                    archive : false 
                 }
             }
             input.value = "" ; 
@@ -48,8 +48,8 @@ document.addEventListener("click" , (e)=>{
     }else if(e.target?.dataset?.value == "pin") {
         notes_database[e.target.dataset.id].pinned =  !notes_database[e.target.dataset.id].pinned  ;
         renderNotes() ; 
-    }else if(e.target?.dataset?.value == "archieve") {
-        notes_database[e.target.dataset.id].archieve =  !notes_database[e.target.dataset.id].archieve  ;
+    }else if(e.target?.dataset?.value == "archive") {
+        notes_database[e.target.dataset.id].archive =  !notes_database[e.target.dataset.id].archive  ;
         renderNotes() ; 
     }
 })
@@ -73,17 +73,17 @@ export default function renderNotes(){
         </span>
         <div class="py-3 d-flex gap-4 fs-3 justify-content-end icons-container">
             <i class="fa-solid fa-thumbtack" data-value = "pin" data-id = ${index}></i>
-            <i class="fa-solid fa-circle-arrow-down" data-value = "archieve" data-id = ${index}></i>
+            <i class="fa-solid fa-circle-arrow-down" data-value = "archive" data-id = ${index}></i>
             <i class="fa-solid fa-trash text-danger" data-value = "delete" data-id = ${index}></i>
             
         </div>
         `
 
-        if(!note.pinned && !note.archieve) {
+        if(!note.pinned && !note.archive) {
             if(other_notes_wrapper)other_notes_wrapper.appendChild(ele) ; 
         }else if(note.pinned) {
             if(pinned_notes_wrapper)pinned_notes_wrapper.appendChild(ele) ; 
-        }else if(note.archieve) {
+        }else if(note.archive) {
            if(archieve_notes_wrapper)archieve_notes_wrapper.appendChild(ele) ; 
         }
 

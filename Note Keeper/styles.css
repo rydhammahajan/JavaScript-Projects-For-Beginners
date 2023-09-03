@@ -62,7 +62,7 @@ textarea{
     right: 0;
 }
 
-.pinned-notes p , .other-notes p{
+.pinned-notes p , .other-notes p , .archive-notes p{
     text-decoration: underline;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace;
@@ -78,10 +78,10 @@ textarea{
 }
 
 .icons-container{
-    display: none !important; 
+    visibility: hidden; 
     color: rgb(158, 145, 145 );
 }
 
 .note:hover .icons-container{
-    display: flex !important;
+    visibility: visible !important;
 }
