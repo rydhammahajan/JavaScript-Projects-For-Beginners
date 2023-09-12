@@ -1,0 +1,71 @@
+body{
+    display : flex ; 
+    flex-direction: column ;
+    gap : 20px ;
+   
+}
+
+#card-container{
+    display: flex;
+    justify-content:space-around;
+    gap : 20px ;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.single-card{
+    height : 380px ; 
+    width : 250px ; 
+    border-radius : 20px ;
+    border : 1px solid black ; 
+    display : flex ; 
+    flex-direction : column ;
+    padding: 10px 10px;
+    gap : 10px ; 
+    position: relative;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    padding-top: 10px ;
+    font-weight: 800;
+}
+
+.card-button{
+    height : 50px ;
+    width : 100px ;
+    position: absolute;
+    bottom : 20px ;
+    right : 20px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+}
+
+.fa-star{
+    color: lightgrey;
+}
+
+.buttons{
+    display: flex; 
+    justify-content: center;
+    gap : 20px ;
+}
+
+button{
+    height : 50px ; 
+    width : 100px ;
+    font-size: 20px;
+    background-color: skyblue;
+    border : none ; 
+    border-radius: 20px;
+}
+
+button:active{
+     background-color: rgb(67, 173, 214);
+}

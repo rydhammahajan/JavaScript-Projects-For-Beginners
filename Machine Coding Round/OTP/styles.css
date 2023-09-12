@@ -1,0 +1,28 @@
+body{
+    height: 100vh ;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input {
+    height : 100px ; 
+    width: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 20px 20px ;
+    font-size: 40px;
+}
+
+input:focus{
+    outline  :none; 
+    border-bottom: 3px solid gold;
+
+}
+
+input:disabled{
+background-color: #fff;
+}

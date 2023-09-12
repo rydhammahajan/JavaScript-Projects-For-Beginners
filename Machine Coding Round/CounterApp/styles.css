@@ -1,0 +1,33 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw ; 
+    display : flex ;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items : center ; 
+    gap : 20px ; 
+}
+
+.font-size{
+    font-size : 20px ;
+}
+.font-size50{
+    font-size : 50px ;
+}
+button{
+    padding: 10px 20px;
+    border : none ;
+}
+button:active{
+    background-color: lightgrey; 
+    color: black;
+}
+.red-color{
+    background-color: red;
+}
+.green-color{
+    background-color : green ; 
+}
+.blue-color{
+    background-color: skyblue;
+}

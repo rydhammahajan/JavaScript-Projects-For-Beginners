@@ -1,0 +1,32 @@
+body{
+    background-color: cornflowerblue;
+    min-width: 1000px ;
+}
+.ans-container {
+    background-color: white;
+    border-radius: 20px;
+}
+.search-box{
+    background-color: white;
+    border-radius: 20px;
+    min-height: 200px;
+    max-height: 500px;
+}
+input{
+    border-radius: 10px;
+    border:  1px solid cornflowerblue;
+}
+input:focus{
+    outline: none;
+}
+.item-list{
+    overflow-y: scroll;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    background-color: rgb(239, 239, 239);
+}

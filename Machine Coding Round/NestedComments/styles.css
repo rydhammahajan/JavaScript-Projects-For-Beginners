@@ -1,0 +1,31 @@
+body{
+    display : flex ; 
+    flex-direction: column ;
+    gap : 20px ;
+    overflow-wrap: wrap ;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+}
+.blue-color{
+    color : blue ;
+}
+.comment-container{
+    border-left: 1px solid black ;
+
+}
+.comment-box{
+    width : 600px ; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(241, 240, 240);
+    box-shadow: 0 0 10px grey;
+}
+
+.nested{
+    margin-left: 50px ;
+}
